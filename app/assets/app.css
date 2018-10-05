@@ -1,0 +1,40 @@
+#links{
+    list-style-type: none;
+    margin: 20px;
+    padding: 5px;
+    font-size: 1.2em;
+    text-align: center
+}
+
+#links a{
+    font-weight: 500;
+    color: #ff9900
+}
+
+#links a:hover{
+    font-weight: 500;
+    color: #41b883
+}
+
+.center{
+    text-align: center;
+    margin: 0
+}
+
+.btn-primary{
+    font-size: 1.3em;
+    background-color: #41b883;
+    border-color: #41b883
+}
+
+.btn-primary:hover{
+    font-size: 1.3em;
+    background-color: #ff9900;
+    border-color: #ff9900
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    margin: 20px
+}
