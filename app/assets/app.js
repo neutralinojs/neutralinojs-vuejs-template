@@ -21,8 +21,7 @@
 // SOFTWARE.
 
 let myapp = {
-    myfunction : () => console.log(`${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`)
-    
+    myfunction : () => document.getElementById('info').innerHTML = `${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`
 };
     
 
