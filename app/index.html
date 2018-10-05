@@ -38,7 +38,7 @@ SOFTWARE. -->
     <div class="row">
       <div class="col-lg-12">
         <h1 class="display-1 center">Neutralino<span>Js + Vue</span></h1>
-        <h4 class="display-4 center" id="info"></h4>
+        <h4 class="display-4 center">{{hostingDetails}}</h4>
       </div>
     </div>
     <div class='row center'>
@@ -113,32 +113,6 @@ SOFTWARE. -->
   </div>
 
   <script src="/assets/app.js"></script>
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data: {
-        greeting: 'Welcome to your NeutralinoJs app, using a Vue.js template!',
-        neuDocsURL: 'https://neutralinojs.github.io/docs/',
-        vueDocsURL: 'http://vuejs.org/guide/',
-        getStartedUrl: 'https://neutralinojs.github.io/docs/#/gettingstarted/quickstart',
-        repoUrl: 'https://github.com/neutralinojs',
-        neutralino: true,
-        docsURL: 'http://vuejs.org/guide/',
-        discordURL: 'https://chat.vuejs.org',
-        forumURL: 'http://forum.vuejs.org/'
-      },
-      methods: {
-        humanizeURL: function (url) {
-          return url
-            .replace(/^https?:\/\//, '')
-            .replace(/\/$/, '')
-        },
-        movePages: function () {
-
-        }
-      }
-    })
-  </script>
 </body>
 
 </html>
