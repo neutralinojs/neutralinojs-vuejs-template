@@ -21,18 +21,43 @@
 // SOFTWARE.
 
 let myapp = {
-    myfunction : () => document.getElementById('info').innerHTML = `${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`
+    myfunction: () => document.getElementById('info').innerHTML = `${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`
 };
-    
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        greeting: 'Welcome to your NeutralinoJs app, using a Vue.js template!',
+        neuDocsURL: 'https://neutralinojs.github.io/docs/',
+        vueDocsURL: 'http://vuejs.org/guide/',
+        getStartedUrl: 'https://neutralinojs.github.io/docs/#/gettingstarted/quickstart',
+        repoUrl: 'https://github.com/neutralinojs',
+        neutralino: true,
+        docsURL: 'http://vuejs.org/guide/',
+        discordURL: 'https://chat.vuejs.org',
+        forumURL: 'http://forum.vuejs.org/',
+        hostingDetails: `${NL_NAME} is running on port ${NL_PORT} inside ${NL_OS}.`
+    },
+    methods: {
+        humanizeURL: function (url) {
+            return url
+                .replace(/^https?:\/\//, '')
+                .replace(/\/$/, '')
+        },
+        movePages: function () {
+
+        }
+    }
+})
 
 Neutralino.init({
     load: () => {
-        myapp.myfunction();
+       // myapp.myfunction();
     },
-    pingSuccessCallback : () => {
+    pingSuccessCallback: () => {
         console.log("ping success");
     },
-    pingFailCallback : () => {
+    pingFailCallback: () => {
         console.log("ping fail");
     }
 });
